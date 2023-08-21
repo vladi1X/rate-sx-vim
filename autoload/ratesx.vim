@@ -1,3 +1,3 @@
-function! rate-sx#CheckRateSX(crypto)
+function! CheckRateSX(crypto)
     terminal curl rate.sx/a:crypto
 endfunction
