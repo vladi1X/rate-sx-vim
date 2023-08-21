@@ -3,5 +3,5 @@ function! CheckRateSX2(...)
 endfunction
 
 command! -nargs=1 CheckRateSX ! curl rate.sx/<f-args>?Tq
-command! -nargs=1 CheckRateSXFunction call rate-sx#CheckRateSX("DOGE")
-command! -nargs=1 CheckRateSXFunction2 call CheckRateSX2(<f-args>)
+command! -nargs=1 CheckRateSXFunction call rate-sx#CheckRateSX(<args>)
+command! -nargs=1 CheckRateSXFunction2 call CheckRateSX2(<args>)
