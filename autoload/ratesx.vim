@@ -1,3 +1,3 @@
 function! ratesx#CheckRateSX(crypto)
-    execute "terminal curl rate.sx/" .  a:crypto . "?Tq"
+    execute "!sh 'curl rate.sx/" .  a:crypto . "?Tq'"
 endfunction
