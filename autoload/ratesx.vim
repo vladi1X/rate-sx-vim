@@ -1,3 +1,3 @@
 function! ratesx#CheckRateSX(crypto)
-    terminal 'curl rate.sx/' . a:crypto
+    echo a:crypto
 endfunction
