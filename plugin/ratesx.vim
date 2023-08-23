@@ -1,1 +1,1 @@
-command! -nargs=1 RateSX call ratesx#RateSX(<f-args>)
+command! -nargs=* RateSX call ratesx#RateSX(<f-args>)
