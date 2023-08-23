@@ -1,6 +1,7 @@
-function! ratesx#RateSX(crypto)
+function! ratesx#RateSX(currency, crypto)
+    let base_command = ""
     if exists("a:crypto")
-        execute "!sh -c 'curl rate.sx/" .  a:1 . "'"
+        execute "!sh -c 'curl rate.sx/" .  a:crypto . "'"
     else
         execute "!sh -c 'curl rate.sx'"
     endif
